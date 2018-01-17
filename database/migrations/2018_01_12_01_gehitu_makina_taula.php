@@ -13,8 +13,8 @@ class GehituMakinaTaula extends Migration
     public function up()
     {
         Schema::create('makina', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('makina_izena');
+            $table->increments('makina_id');
+            $table->string('izena');
             $table->timestamps();
         });
     }

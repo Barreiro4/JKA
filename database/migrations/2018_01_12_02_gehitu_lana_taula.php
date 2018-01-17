@@ -25,7 +25,7 @@ class GehituLanaTaula extends Migration
         });
         
         
-        //Schema::create('lana', function (Blueprint $table) {
+        
     }
 
     /**

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class GehituLoteakTaula extends Migration
+class GehituLangileakTaula extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,14 @@ class GehituLoteakTaula extends Migration
      */
     public function up()
     {
-        Schema::create('loteak', function (Blueprint $table) {
-            $table->increments('lote_id');
+        Schema::create('langileak', function (Blueprint $table) {
+            $table->increments('langile_id');
+            $table->string('izena');
+            $table->string('abizena');
+            $table->string('dpto');
             $table->string('arduraduna');
-            $table->string('materiala');
-            $table->string('noiz');
-            $table->string('emaitza');
-            $table->string('alma_non');
-            $table->timestamps();
+           
+            
         });
     }
 
@@ -30,6 +30,6 @@ class GehituLoteakTaula extends Migration
      */
     public function down()
     {
-        Schema::drop('loteak');
+        Schema::drop('langileak');
     }
 }
