@@ -19,7 +19,7 @@ class GehituBezeroakTaula extends Migration
             $table->timestamps();
         });
         
-        Schema::create('bezero_lote', function (Blueprint $table) {
+        Schema::create('bidali', function (Blueprint $table) {
             $table->integer('bezero_id')->unsigned();
             $table->integer('lote_id')->unsigned();
             $table->string('data');

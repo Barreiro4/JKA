@@ -23,7 +23,7 @@ class GehituLoteakTaula extends Migration
             $table->timestamps();
         });
         
-        Schema::create('lana_lote', function (Blueprint $table) {
+        Schema::create('egin', function (Blueprint $table) {
             $table->integer('lana_id')->unsigned();
             $table->integer('lote_id')->unsigned();
             $table->string('data');
