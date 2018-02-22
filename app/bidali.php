@@ -8,5 +8,5 @@ class bidali extends Model
 {
     protected $table= "bidali";
     
-    protected $fillable= ['lote_id', 'bezero_id', 'data'];
+    protected $fillable= ['id_bid','bezero_id','lote_id', 'data','kopurua'];
 }

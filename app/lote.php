@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class lote extends Model
 {
-    protected $table= "lote";
+    protected $table= "loteak";
     
-    protected $fillable = ['lote_id', 'arduraduna', 'materiala', 'hasiera_data', 'bukaera_data', 'emaitza','almazen_kokapena'];
+    protected $fillable = ['lote_id', 'arduraduna', 'materiala', 'hasiera_data', 'bukaera_data', 'emaitza','almazen_kokapena', 'kopurua'];
     
     public function lanak()
     {
@@ -19,4 +19,6 @@ class lote extends Model
     {
         return $this->belongsToMany('App\bezeroak');
     }
+    
+    
 }
